@@ -1,4 +1,13 @@
 ## Hi there 👋
+My personal portfolio showcasing projects and technical expertise
+- 🔭 I’m currently working on how Git Hub works...
+- 🌱 I’m currently learning the basics of coding on a Technative Bootcamp
+- 👯 I’m looking to collaborate on web projects
+- 🤔 I’m looking for help with how to use Git Bash
+- 💬 Ask me about HTML
+- 📫 How to reach me: on Slack
+- 😄 Pronouns: She/her
+- ⚡ Fun fact: I'm hoping to set up my own business
 
 <!--
 **SarahDev5/SarahDev5** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
