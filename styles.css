@@ -1,35 +1,103 @@
+/* Global styles */
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #0c1b64;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .tile {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 1rem;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .tile:hover {
-      transform: scale(1.03);
-    }
-    .tile img {
-      max-width: 100%;
-      border-radius: 4px;
-    }
-    .tile h3 {
-      margin-top: 0.5rem;
-    }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+  background-color: #0c1b64;
+  color: white;
+  padding: 1rem;
+  text-align: center;   /* centers title, image, and text */
+}
+
+/* Intro section wrapper */
+.intro {
+  max-width: 800px;     /* keeps content from stretching too wide */
+  margin: 0 auto;
+  display: flex;        /* side by side on larger screens */
+  align-items: center;
+  justify-content: center;
+  gap: 10%;             /* spacing between text and image */
+  text-align:justify;   /* center text inside text-block */
+}
+
+/* Profile image */
+.profile-pic {
+  width: 100px;         /* adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;       /* spacing above/below image */
+  box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+
+/* Text block */
+.text-block {
+  flex: 1;              /* text takes available width */
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Grid container: flexible columns that shrink to 200px minimum */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* Tile styling */
+.tile {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.tile:hover {
+  transform: scale(1.03);
+}
+
+.tile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tile h3 {
+  margin-top: 0.5rem;
+}
+
+/* 📱 Mobile responsive styles */
+@media (max-width: 600px) {
+  .intro {
+    flex-direction: column; /* stack vertically: title → image → text */
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-top: 1rem;   /* spacing above image */
+    max-width: 150px;   /* slightly larger on mobile */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* stack tiles vertically */
+    padding: 1rem;              /* reduce padding */
+  }
+
+  .tile {
+    padding: 0.75rem;           /* tighter spacing */
+  }
+
+  header {
+    padding: 0.75rem;           /* adjust header padding */
+    font-size: 1rem;            /* scale down text */
+  }
+}
