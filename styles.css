@@ -10,7 +10,7 @@ header {
   background-color: #0c1b64;
   color: white;
   padding: 1rem;
-  text-align: center;   /* centers title, image, and text */
+  text-align:center; /* centers title, image, and text */
 }
 
 /* Intro section wrapper */
@@ -19,9 +19,9 @@ header {
   margin: 0 auto;
   display: flex;        /* side by side on larger screens */
   align-items: center;
-  justify-content: center;
+  justify-content: justify;
   gap: 10%;             /* spacing between text and image */
-  text-align:justify;   /* center text inside text-block */
+  text-align:justify; 
 }
 
 /* Profile image */
@@ -30,7 +30,7 @@ header {
   height: auto;
   border-radius: 8px;
   margin: 1rem 0;       /* spacing above/below image */
-  box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 15px rgba(0,0,0,0.3);
 }
 
 /* Text block */
