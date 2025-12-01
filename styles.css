@@ -7,11 +7,17 @@ body {
 
 /* Header styles */
 header {
-  background-color: #0c1b64;
+  background: linear-gradient(
+    180deg,                /* diagonal angle */
+    #02071f,               /* dark blue */
+    #10215c,               /* medium blue */
+    #3b6e8b                /* lighter accent */
+  );
   color: white;
   padding: 1rem;
-  text-align:center; /* centers title, image, and text */
+  text-align: center;
 }
+
 
 /* Intro section wrapper */
 .intro {
