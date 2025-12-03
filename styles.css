@@ -140,9 +140,26 @@ html, body {
 
 }
 
-/* Navigation */
+.container {
+  max-width: 1000px;       /* controls horizontal size */
+  margin: 0 auto;          /* centers it horizontally */
+  background: rgb(205, 214, 228);       /* main content background */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* shadow behind */
+  padding: 2rem;           /* breathing room inside */
+}
 
+.testimonial {
+  background-color: #ffffff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
 
+.contact {
+  background-color: #153679;
+  display: flex;
+  flex-direction: column;
+}
 
 nav ul {
   display: flex;
@@ -193,7 +210,7 @@ nav a {
 .container {
   max-width: 1000px;       /* controls horizontal size */
   margin: 0 auto;          /* centers it horizontally */
-  background: rgb(205, 214, 228);       /* main content background */
+  background: rgb(231, 237, 247);       /* main content background */
   box-shadow: 0 0 20px rgba(0,0,0,0.3); /* shadow behind */
   padding: 2rem;           /* breathing room inside */
 }
