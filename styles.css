@@ -1,4 +1,4 @@
-/* Global styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -53,7 +53,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* Tile styling */
@@ -106,4 +106,231 @@ p {
     padding: 0.75rem;           /* adjust header padding */
     font-size: 1rem;            /* scale down text */
   }
+}
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    color: white;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+    text-align: right;
+  }  
+
+  /* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #edeff1;
+
+}
+
+/* Navigation */
+
+
+
+nav ul {
+  display: flex;
+  justify-content: center; /* centers the nav links */
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-button {
+  align-items: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: gray;
+  color: white;
+}
+
+.nav-button.active {
+  background-color: rgb(8, 54, 100);
+  color: white;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;       /* controls horizontal size */
+  margin: 0 auto;          /* centers it horizontally */
+  background: rgb(205, 214, 228);       /* main content background */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* shadow behind */
+  padding: 2rem;           /* breathing room inside */
+}
+
+.intro-content {
+  display: flex;
+  align-items: flex-start; /* aligns text to the top */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.intro-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .intro-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .intro-image img {
+    max-width: 100%;
+  }
+}
+
+
+/* Sections */
+section {
+  padding: 10px 20px;
+  min-height: 40vh;
+}
+
+
+/* Form */
+form {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+
+
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001; /* Even higher to stay above modal content */
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 80px 15px;
+  }
+
+  form {
+    padding: 0 10px;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+
+  .close {
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+  }
+
 }
